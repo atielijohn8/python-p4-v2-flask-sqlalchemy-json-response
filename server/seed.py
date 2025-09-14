@@ -21,7 +21,7 @@ with app.app_context():
 
     # Add some Pet instances to the list
     for n in range(10):
-        pet = Pet(name=fake.first_name(), species=rc(species))
+        pet = Pet(name=fake.first_name(), species=rc(species))#rc is random choice means pick one element from species
         pets.append(pet)
 
     # Insert each Pet in the list into the "pets" table
